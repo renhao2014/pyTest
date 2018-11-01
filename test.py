@@ -1,6 +1,10 @@
+#http://www.runoob.com/python3/
+
+
 import keyword
 from sys import argv, path  # 导入特定的成员
 import funTest
+import  numpy
 
 #关键词列表
 print(keyword.kwlist)
