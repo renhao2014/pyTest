@@ -1,17 +1,23 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
-import matplotlib.pyplot as pt
 
-x = np.arange(0, 360)
+N = 10
+x = np.random.randint(0,10,N)
+y = np.random.randint(0,10,N)
 
-y = np.sin(x * np.pi / 180.0)
+print(x)
+print(y)
 
-pt.plot(x, y)
+color = np.add(x,y)
+#plt.figure(figsize=(10,10))
+plt.scatter(x, y,c=color,alpha=0.5)
+plt.show()
 
-pt.xlim(0, 360)
 
-pt.ylim(-1.2, 1.2)
 
-pt.title("SIN function")
 
-pt.show()
+
+
+
+
