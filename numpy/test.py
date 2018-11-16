@@ -1,17 +1,34 @@
 import numpy as np
 
-import matplotlib.pyplot as pt
+arr=np.array([1,2,3],ndmin=3)
+print(str(arr))
 
-x = np.arange(0 ,360)
+print("扩展：")
+a=1
+b=np.tile(1,(2,4,8))
+print(b)
+print(b.shape)#返回一个元组
 
-y = np.sin(x * np.pi / 180.0)
+print("重组：")
+c=np.arange(0,24,2)
+c=c.reshape(2,6)
+print(c)
 
-pt.plot(x, y)
+print("矩阵乘法：")
+c=c*2
+print(c)
 
-pt.xlim(0, 360)
+print("矩阵减法：")
+d=np.ones([2,6])
+e=c-d
+print(e)
 
-pt.ylim(-1.2, 1.2)
+print("矩阵转置：")
+print(e.T)
 
-pt.title("SIN function")
+print("排序：")
+f=np.array([4,5,8,1,3,9,3,0])
+f=f.reshape(2,4)
+g=np.sort(f)
+print(g)
 
-pt.show()
