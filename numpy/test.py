@@ -32,3 +32,7 @@ f=f.reshape(2,4)
 g=np.sort(f)
 print(g)
 
+#切片
+h=np.arange(1,10,1)
+print(h[3:6])
+print(g[:,2])
